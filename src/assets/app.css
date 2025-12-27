@@ -118,17 +118,9 @@
   }
 }
 
-/* Simple timeline styling if you want extra line accent */
-.timeline-line {
-  position: relative;
-}
-
-.timeline-line::before {
-  content: "";
-  position: absolute;
-  left: 0.875rem;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(to bottom, #38bdf8, #a855f7);
+/* Card-like boxes inside the timeline */
+.timeline-box {
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
 }

@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Triverse 2.0 · Home">
   <!-- On-load hero animation with event name + logo -->
   <section class="hero min-h-[70vh] bg-white text-[#00629B]">
-    <div class="hero-content flex flex-col lg:flex-row items-center gap-10">
+    <div class="hero-content flex flex-col lg:flex-row items-center gap-10 w-full max-w-5xl mx-auto px-4">
       <div class="space-y-6 max-w-xl">
         <p class="badge badge-lg border-0 bg-[#00B5E2] text-white">
           IEEE Student Branch · Bennett University
@@ -23,13 +23,10 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
       <div class="card bg-base-100/80 shadow-2xl w-full max-w-sm animate-bounce-slow">
-        <div class="card-body items-center">
-          <img
-            src="/src/images/ieeelogo.png"
-            alt="IEEE Club Logo"
-            class="h-24 w-auto mb-4"
-            loading="lazy"
-          />
+        <div class="card-body items-center gap-4">
+          <div class="w-full h-32 rounded-xl bg-[#00B5E2]/10 border border-dashed border-[#00B5E2]/40 flex items-center justify-center text-xs text-[#00629B]/70">
+            Image placeholder (club / event artwork)
+          </div>
           <h2 class="card-title mb-2">Powered by IEEE SB</h2>
           <p class="text-sm opacity-80 text-center">
             Celebrate technology and community with a series of hands-on
@@ -41,7 +38,7 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
   <!-- Long scrolling content with placeholder paragraphs -->
-  <section class="mt-16 space-y-10 bg-white/90 rounded-2xl p-6 shadow-sm">
+  <section class="mt-16 space-y-10 bg-white/90 rounded-2xl p-6 shadow-sm max-w-5xl mx-auto px-4">
     <div class="prose max-w-none text-[#00629B]">
       <h2>Why Triverse 2.0?</h2>
       <p>

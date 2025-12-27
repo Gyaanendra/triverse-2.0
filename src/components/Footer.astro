@@ -1,10 +1,78 @@
 ---
 ---
 
-<footer class="footer footer-center bg-base-200 text-base-content p-4 border-t mt-10">
-  <aside>
-    <p>
-      © {new Date().getFullYear()} Triverse 2.0 · IEEE Student Branch · Bennett University
-    </p>
-  </aside>
+<footer class="mt-16 bg-white/95 border-t border-[#00B5E2]/30">
+  <div class="max-w-5xl mx-auto px-4 py-10 grid gap-8 md:grid-cols-3">
+    <!-- Logo + description -->
+    <div class="space-y-3">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-[#00B5E2]/10 border border-[#00B5E2]/40 flex items-center justify-center text-[10px] uppercase tracking-[0.1em] text-[#00629B]">
+          Logo
+        </div>
+        <div class="font-semibold text-[#00629B]">Triverse 2.0</div>
+      </div>
+      <p class="text-sm text-[#00629B]/80">
+        Placeholder copy about the event and IEEE Student Branch at Bennett University.
+      </p>
+    </div>
+
+    <!-- Links -->
+    <div class="space-y-3">
+      <h3 class="font-semibold text-[#00629B]">Links</h3>
+      <ul class="text-sm space-y-1 text-[#00629B]/80">
+        <li><a href="/events" class="link link-hover">Events</a></li>
+        <li><a href="/teams" class="link link-hover">Teams</a></li>
+        <li><a href="/sponsers" class="link link-hover">Sponsers</a></li>
+        <li><a href="#contact" class="link link-hover">Contact</a></li>
+        <li>
+          <a
+            href="https://linktr.ee/ieee_bu_"
+            class="link link-hover"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Linktree
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Contact + creators -->
+    <div class="space-y-3" id="contact">
+      <h3 class="font-semibold text-[#00629B]">Contact</h3>
+      <p class="text-sm text-[#00629B]/80">
+        Email placeholder: ieee.club@university.edu
+      </p>
+      <div class="flex -space-x-2">
+        <div class="avatar placeholder">
+          <div class="w-9 rounded-full bg-[#00B5E2]/20 border border-[#00B5E2]/50 text-xs text-[#00629B] flex items-center justify-center">
+            A1
+          </div>
+        </div>
+        <div class="avatar placeholder">
+          <div class="w-9 rounded-full bg-[#00B5E2]/20 border border-[#00B5E2]/50 text-xs text-[#00629B] flex items-center justify-center">
+            A2
+          </div>
+        </div>
+        <div class="avatar placeholder">
+          <div class="w-9 rounded-full bg-[#00B5E2]/20 border border-[#00B5E2]/50 text-xs text-[#00629B] flex items-center justify-center">
+            A3
+          </div>
+        </div>
+        <div class="avatar placeholder">
+          <div class="w-9 rounded-full bg-[#00B5E2]/20 border border-[#00B5E2]/50 text-xs text-[#00629B] flex items-center justify-center">
+            A4
+          </div>
+        </div>
+      </div>
+      <p class="text-xs text-[#00629B]/60">Placeholder avatars of the core team who created this site.</p>
+    </div>
+  </div>
+
+  <div class="border-t border-[#00B5E2]/20">
+    <div class="max-w-5xl mx-auto px-4 py-4 text-xs text-[#00629B]/70 flex flex-col sm:flex-row justify-between gap-2">
+      <span>© {new Date().getFullYear()} Triverse 2.0 · IEEE Student Branch · Bennett University</span>
+      <span>All content and logos are placeholders.</span>
+    </div>
+  </div>
 </footer>

@@ -13,12 +13,12 @@ import Layout from "../layouts/Layout.astro";
     </header>
 
     <!-- Timeline using daisyUI timeline styles -->
-    <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical bg-base-100/60 rounded-box p-6">
+    <ul class="timeline timeline-vertical max-md:timeline-compact bg-white/90 rounded-2xl p-6 shadow-sm">
       <li>
-        <div class="timeline-middle text-sky-400">
-          <span class="material-symbols-outlined"> rocket_launch </span>
+        <div class="timeline-middle text-[#00B5E2]">
+          <span class="text-xl">🚀</span>
         </div>
-        <div class="timeline-start md:text-end mb-10">
+        <div class="timeline-start md:text-end mb-10 timeline-box">
           <time class="font-mono text-sm opacity-70">Day 1 · 09:00 AM</time>
           <div class="text-lg font-semibold">Inauguration &amp; Opening Keynote</div>
           <p>
@@ -33,11 +33,11 @@ import Layout from "../layouts/Layout.astro";
       </li>
 
       <li>
-        <hr />
+        <hr class="bg-[#00B5E2]/40" />
         <div class="timeline-middle">
           <div class="badge badge-secondary"></div>
         </div>
-        <div class="timeline-end mb-10">
+        <div class="timeline-end mb-10 timeline-box">
           <time class="font-mono text-sm opacity-70">Day 1 · 11:30 AM</time>
           <div class="text-lg font-semibold">Hands-on Workshop: Build &amp; Deploy</div>
           <p>
@@ -49,11 +49,11 @@ import Layout from "../layouts/Layout.astro";
       </li>
 
       <li>
-        <hr />
+        <hr class="bg-[#00B5E2]/40" />
         <div class="timeline-middle">
           <div class="badge badge-accent"></div>
         </div>
-        <div class="timeline-start md:text-end mb-10">
+        <div class="timeline-start md:text-end mb-10 timeline-box">
           <time class="font-mono text-sm opacity-70">Day 1 · 03:00 PM</time>
           <div class="text-lg font-semibold">Panel Discussion: Future of Tech</div>
           <p>
@@ -65,11 +65,11 @@ import Layout from "../layouts/Layout.astro";
       </li>
 
       <li>
-        <hr />
+        <hr class="bg-[#00B5E2]/40" />
         <div class="timeline-middle">
           <div class="badge badge-info"></div>
         </div>
-        <div class="timeline-end mb-10">
+        <div class="timeline-end mb-10 timeline-box">
           <time class="font-mono text-sm opacity-70">Day 2 · 10:00 AM</time>
           <div class="text-lg font-semibold">Hackathon &amp; Ideathon</div>
           <p>
@@ -82,11 +82,11 @@ import Layout from "../layouts/Layout.astro";
       </li>
 
       <li>
-        <hr />
+        <hr class="bg-[#00B5E2]/40" />
         <div class="timeline-middle">
           <div class="badge badge-success"></div>
         </div>
-        <div class="timeline-start md:text-end mb-10">
+        <div class="timeline-start md:text-end mb-10 timeline-box">
           <time class="font-mono text-sm opacity-70">Day 2 · 04:30 PM</time>
           <div class="text-lg font-semibold">Valedictory &amp; Prize Distribution</div>
           <p>
@@ -98,8 +98,42 @@ import Layout from "../layouts/Layout.astro";
       </li>
     </ul>
 
+    <!-- Previous events gallery with placeholders -->
+    <section class="space-y-4">
+      <h2 class="text-2xl font-semibold text-[#00629B]">Previous Editions</h2>
+      <div class="grid gap-4 md:grid-cols-3">
+        <div class="card bg-base-100/80 shadow-sm">
+          <div class="card-body space-y-2">
+            <div class="w-full h-24 rounded-xl bg-[#00B5E2]/10 border border-dashed border-[#00B5E2]/40 flex items-center justify-center text-xs text-[#00629B]/70">
+              Photo placeholder · Triverse 1.0
+            </div>
+            <h3 class="font-semibold text-[#00629B]">Triverse 1.0</h3>
+            <p class="text-xs text-[#00629B]/80">Highlights from the first edition of the event.</p>
+          </div>
+        </div>
+        <div class="card bg-base-100/80 shadow-sm">
+          <div class="card-body space-y-2">
+            <div class="w-full h-24 rounded-xl bg-[#00B5E2]/10 border border-dashed border-[#00B5E2]/40 flex items-center justify-center text-xs text-[#00629B]/70">
+              Workshop / speaker session placeholder
+            </div>
+            <h3 class="font-semibold text-[#00629B]">Workshops</h3>
+            <p class="text-xs text-[#00629B]/80">Placeholder for photos from past workshops.</p>
+          </div>
+        </div>
+        <div class="card bg-base-100/80 shadow-sm">
+          <div class="card-body space-y-2">
+            <div class="w-full h-24 rounded-xl bg-[#00B5E2]/10 border border-dashed border-[#00B5E2]/40 flex items-center justify-center text-xs text-[#00629B]/70">
+              Hackathon / team photo placeholder
+            </div>
+            <h3 class="font-semibold text-[#00629B]">Hackathons</h3>
+            <p class="text-xs text-[#00629B]/80">Placeholder for hackathon galleries.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Extra scrolling content -->
-    <div class="prose prose-invert max-w-none">
+    <div class="prose max-w-none text-[#00629B]">
       <h2>More details coming soon</h2>
       <p>
         Nunc laoreet sem nec justo feugiat, sit amet eleifend urna lacinia.
