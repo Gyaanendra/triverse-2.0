@@ -27,14 +27,21 @@ const { title = 'Triverse 3.0' } = Astro.props;
     >
       <div class="intro-bar intro-bar-left"></div>
       <div class="intro-bar intro-bar-right"></div>
+      
+      <!-- Animated orbs for mobile enhancement -->
+      <div class="intro-orb intro-orb-1"></div>
+      <div class="intro-orb intro-orb-2"></div>
+      
       <div class="intro-center relative text-center text-white z-10">
-        <Image
-          src={ieeeLogo}
-          alt="IEEE Club Logo"
-          class="h-32 md:h-40 w-auto mb-6 mx-auto"
-          loading="lazy"
-        />
-        <h1 class="text-5xl md:text-6xl font-extrabold tracking-wide">Triverse 3.0</h1>
+        <div class="intro-glow-container">
+          <Image
+            src={ieeeLogo}
+            alt="IEEE Club Logo"
+            class="h-32 md:h-40 w-auto mb-6 mx-auto relative z-10"
+            loading="lazy"
+          />
+        </div>
+        <h1 class="text-5xl md:text-6xl font-extrabold tracking-wide intro-title">Triverse 3.0</h1>
         <p class="mt-3 text-base md:text-lg opacity-80">
           IEEE Student Branch · Bennett University
         </p>
@@ -44,7 +51,7 @@ const { title = 'Triverse 3.0' } = Astro.props;
     <Header />
 
     <!-- floating dock navigation only -->
-    <nav class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
+    <nav id="floating-nav" class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 opacity-0 invisible">
       <div class="btn-group bg-base-200/90 backdrop-blur rounded-box shadow-lg p-1">
         <a href="/" class="btn btn-sm btn-ghost" data-page-link>Home</a>
         <a href="/events" class="btn btn-sm btn-ghost" data-page-link>Events</a>
@@ -53,7 +60,7 @@ const { title = 'Triverse 3.0' } = Astro.props;
       </div>
     </nav>
 
-    <main id="page-root" class="pt-24 pb-24 px-4 max-w-5xl mx-auto opacity-0">
+    <main id="page-root" class="pt-24 pb-24 px-4 max-w-5xl mx-auto opacity-0 invisible">
       <slot />
     </main>
 
@@ -99,10 +106,18 @@ const { title = 'Triverse 3.0' } = Astro.props;
 
       const showPage = () => {
         const main = document.getElementById('page-root');
-        if (!main) return;
-        main.classList.remove('opacity-0');
-        main.classList.remove('page-fade-out');
-        main.classList.add('page-fade-in');
+        const nav = document.getElementById('floating-nav');
+        
+        if (main) {
+          main.classList.remove('opacity-0', 'invisible');
+          main.classList.remove('page-fade-out');
+          main.classList.add('page-fade-in');
+        }
+        
+        if (nav) {
+          nav.classList.remove('opacity-0', 'invisible');
+          nav.classList.add('page-fade-in');
+        }
       };
 
       const hidePageWithFade = (onHidden) => {
