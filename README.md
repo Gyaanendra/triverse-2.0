@@ -1,6 +1,6 @@
-# Triverse 2.0 – IEEE Bennett University
+# Triverse 3.0 – IEEE Bennett University
 
-Astro + Tailwind CSS + daisyUI powered landing site for **Triverse 2.0**, the flagship event of the IEEE Student Branch at Bennett University.
+Astro + Tailwind CSS + daisyUI powered landing site for **Triverse 3.0**, the flagship event of the IEEE Student Branch at Bennett University.
 
 The site includes:
 
@@ -89,7 +89,7 @@ triverse-2.0/
   - **Main content** container (`#page-root`) with fade-in/out animations
   - **Footer** (links, contact, Linktree, team avatars)
 - Contains:
-  - **Intro overlay**: diagonal bar animation and “Triverse 2.0” + logo
+- **Intro overlay**: diagonal bar animation and “Triverse 3.0” + logo
   - **JavaScript hooks** for:
     - Playing intro on load
     - Fading page in
@@ -125,8 +125,8 @@ triverse-2.0/
   - CTA buttons: “Explore Events”, “Meet the Teams”
 - Right-side card with **image placeholder** for club/event art.
 - Long scrollable content:
-  - “Why Triverse 2.0?”
-  - Three feature cards: *Innovate, Collaborate, Celebrate*
+- “Why Triverse 3.0?”
+  - Three feature cards: _Innovate, Collaborate, Celebrate_
   - “What to expect” section with paragraphs for future content.
 
 ### `/events` – Events (`src/pages/events.astro`)
@@ -202,6 +202,7 @@ triverse-2.0/
   You can tweak/centralize these in Tailwind config later if desired.
 
 - **Replace placeholders:**
+
   - Hero card image: replace the placeholder `<div>` with an `<Image />` or `<img>`.
   - Teams: replace team photo placeholders with real images.
   - Events: attach real photos for previous editions.
@@ -230,7 +231,7 @@ Check Astro’s docs for specific platform adapters if you want SSR or advanced 
 
 ## License / Ownership
 
-This project is intended for **IEEE Student Branch, Bennett University** and the Triverse 2.0 event.  
+This project is intended for **IEEE Student Branch, Bennett University** and the Triverse 3.0 event.
 Update this section with your chosen license or internal usage note.
 
 # Astro Starter Kit: Basics
